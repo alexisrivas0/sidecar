@@ -1,2 +1,8 @@
 
 \.DS_Store
+
+node-sidecar/\.idea/
+
+spring-eureka-server-master/\.idea/
+
+SpringZuulServer-master/\.idea/
