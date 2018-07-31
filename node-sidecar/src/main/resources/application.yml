@@ -1,0 +1,17 @@
+server:
+  port: ${PORT:5678}
+
+
+sidecar:
+  port: 3000
+  home-page-uri: http://localhost:${sidecar.port}/welcome
+  health-uri: http://localhost:${sidecar.port}/health
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761/eureka/}
+
+#tiene sus placeholder para funcionar correctamente en el port y en el defaultZone
